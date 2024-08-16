@@ -14,6 +14,17 @@ closeBtn.addEventListener('click', () => {
     closeBtn.style.display = "none";
 })
 
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target);
+    const isClickOnMenuBtn = menuBtn.contains(event.target);
+    
+    if (!isClickInsideMenu && !isClickOnMenuBtn) {
+        navMenu.style.display = "none";
+        menuBtn.style.display = "inline-block";
+        closeBtn.style.display = "none";
+    }
+});
+
 const menuItems = navMenu.querySelectorAll("a");
 if(window.innerWidth < 1024) {
     menuItems.forEach(item => {
