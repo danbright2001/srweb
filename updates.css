@@ -1,1 +1,45 @@
+:root {
+    --bottom-section-padding: 12rem;
+    --bottom-section-padding-mobile: 8rem;
 
+    /* ===============Container width=========== */
+    --container-width-lg: 84%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    /* ===============Colors=========== */
+    /* rgb(18 21 30 / 1) */
+    --color-primary: rgb(18 21 30 / 1) ;
+    --color-primary-variant: rgba(137, 137, 182, 0.2);
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --color-black: #000F37;
+    --color-dark: #575757;
+    /* ===============Transitions=========== */
+    --transition: all 400ms ease;
+}
+
+#updates {
+    width: var(--container-width-lg);
+    margin-inline: auto;
+    max-width: 500px;
+
+}
+button {
+    cursor: pointer;
+}
+h3 {
+    margin-bottom: 2rem;
+}
+p {
+    font-size: 1rem;
+}
+.section {
+    padding: 12rem 0;
+    margin-inline: auto;
+}  
+@media (max-width:1024px) {
+    #updates {
+        width: var(--container-width-md);
+    }
+}
